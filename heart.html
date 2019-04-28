@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>Document</title>
+    <style type="text/css">
+    .img1{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    .img2{
+        position: relative;
+        top: 180px;
+        left: 20px;
+    }
+    .img3{
+        position: relative;
+        top: 150px;
+        left: 60px;
+    }
+    .img4{
+        position: relative;
+        top: 270px;
+        left: 100px;
+    }
+    .img5{
+        position: relative;
+        top: 200px;
+        left: 140px;
+    }
+    .img6{
+        position: relative;
+        top: 300px;
+        left: 200px;
+    }
+    .img7{
+        position: relative;
+        top: 0px;
+        left: 240px;
+    }
+    .img8{
+        position: relative;
+        top: 400px;
+        left: 0px;
+    }
+    .img9{
+        position: relative;
+        top: 200px;
+        left: 0px;
+    }
+    .img10{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    </style>
+    <script type="text/javascript">
+    var width=100;
+    var intervalId=0;
+    var difference=20;
+    function incOrDec(){
+        intervalId=setInterval(expandOrShrink,200)
+    }
+    function expandOrShrink(){
+        if(width<121){
+            width=width+difference
+            document.getElementById('img1').style.width=width
+            console.log(width)
+        }
+        else{
+            width=width-difference
+            document.getElementById('img1').style.width=width
+            console.log(width)
+        }
+    }
+
+    
+    </script>
+</head>
+<body onload="incOrDec()">
+    <br>
+    <br>
+    <img width="100" id="img1" src="images.png" class="img1">
+    <img width="100" id="img1" src="images.png" class="img2">
+    <img width="100" id="img1" src="images.png" class="img3">
+    <img width="100" id="img1" src="images.png" class="img4">
+    <img width="100" id="img1" src="images.png" class="img5">
+    <img width="100" id="img1" src="images.png" class="img6">
+    <img width="100" id="img1" src="images.png" class="img7">
+    <img width="100" id="img1" src="images.png" class="img4">
+    <img width="100" id="img1" src="images.png" class="img8">
+    <img width="100" id="img1" src="images.png" class="img9">
+
+
+</body>
+</html>
